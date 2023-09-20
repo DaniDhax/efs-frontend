@@ -33,6 +33,7 @@ const LoginButtons = () => {
           setGettingCode(true)
           axios
             .post(
+            // `http://localhost:4000/api/auth/login/ignaciogesualdo@gmail.com/code`
               `${env.NEXT_PUBLIC_BACKEND_BASE_URL}/auth/login/${email}/code`
             )
             .then(({ data }) => {
